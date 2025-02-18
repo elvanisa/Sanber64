@@ -3,4 +3,5 @@ test sanber 64
 
 
 nama: A
-keterangan:
+
+keterangan: belajar
