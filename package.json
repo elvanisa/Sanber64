@@ -4,7 +4,9 @@
   "description": "cypress sanber 64",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "checkout_test": "npx cypress run --browser chrome --spec 'cypress/e2e/saucedemo/checkout.cy.js'",
+    "login_test": "npx cypress run --browser chrome --spec 'cypress/e2e/saucedemo/login.cy.js'"
   },
   "repository": {
     "type": "git",
