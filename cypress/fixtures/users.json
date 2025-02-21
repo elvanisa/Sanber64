@@ -1,0 +1,18 @@
+[
+    {
+        "name": "standard_user",
+        "pwd": "secret_sauce"
+    },
+    {
+        "name": "locked_out_user",
+        "pwd": "secret_sauce"
+    },
+    {
+        "name": "salah_orang",
+        "pwd": "secret_sauce"
+    },
+    {
+        "name": "standard_user",
+        "pwd": "1"
+    }
+]
