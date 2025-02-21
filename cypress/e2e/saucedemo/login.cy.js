@@ -31,4 +31,11 @@ describe('Verify Login Functionality', () => {
     cy.get('[data-test="error"]').should('be.visible')
     cy.get('[data-test="error"]').should('contain.text','Username and password do not match any user in this service')
   })
+  it('Failed Login - env test', () => {
+    cy.get('#user-name').type(Cypress.env('prod'))
+    cy.get('[data-test="password"]').type('bukan_password')
+    cy.get('[data-test="login-button"]').click()
+    cy.get('[data-test="error"]').should('be.visible')
+    cy.get('[data-test="error"]').should('contain.text','Username and password do not match any user in this service')
+  })
 })
