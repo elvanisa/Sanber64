@@ -5,10 +5,7 @@ describe('Verify add to cart functionality', () => {
     cy.visit('')
   })
   it('Add a product to cart', () => {
-    //cy.get('#user-name').type('standard_user')
-    saucedemoPage.inputUsername('standard_user')
-    cy.get('[data-test="password"]').type('secret_sauce')
-    cy.get('[data-test="login-button"]').click()
+    cy.login('standard_user','secret_sauce')
     cy.get('.app_logo').should('be.visible')
     cy.get('[data-test="title"]').should('have.text','Products')
     cy.url().should('include','inventory')
